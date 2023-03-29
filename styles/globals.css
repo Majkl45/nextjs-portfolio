@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  @apply scroll-smooth overflow-y-scroll;
+  scrollbar-color: #23c481 rgba(0, 0 ,0, 0.2) ;
+  scrollbar-width: thin;
+}
+body::-webkit-scrollbar{
+  @apply w-2 bg-background-secondary 
+}
+body::-webkit-scrollbar-thumb{
+  @apply rounded-lg bg-green
+}
+body::-webkit-scrollbar-thumb:hover{
+  @apply bg-[#15754d]
+}
+
+@layer components {
+  main {
+    @apply flex flex-col justify-center items-center mt-20 gap-20 text-primary overflow-x-hidden
+  }
+  .section {
+    @apply pt-8 inline-flex justify-center items-center flex-col
+  }
+  .title {
+    @apply relative text-3xl md:text-5xl font-extrabold mx-4 pt-10 text-green 
+  }
+  .nav-hover {
+    @apply bg-left-bottom bg-gradient-to-r from-green to-green bg-[length:0%_2px] bg-no-repeat group-hover:text-green group-hover:bg-[length:100%_2px] 
+    transition-all duration-500 ease-out
+  }
+}
+
+@keyframes shaking-hand {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  10% {
+      -webkit-transform: rotate(14deg);
+      transform: rotate(14deg);
+  }
+  20% {
+      -webkit-transform: rotate(-8deg);
+      transform: rotate(-8deg);
+  }
+  30% {
+      -webkit-transform: rotate(14deg);
+      transform: rotate(14deg);
+  }
+  40% {
+      -webkit-transform: rotate(-4deg);
+      transform: rotate(-4deg);
+  }
+  50% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+  }
+  60% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+}
