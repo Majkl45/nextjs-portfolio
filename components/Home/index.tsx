@@ -11,7 +11,7 @@ const HomeHero = () => {
           <h1 className="text-3xl md:text-[clamp(2.5rem,4vw,4rem)] font-extrabold leading-[3rem]">
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-blue">Michael</span>
             <div className="inline-block animate-[shaking-hand_2.5s_ease-in-out_infinite]">
-              <span >🤚</span>
+              <span>&#9995;</span>
             </div>
           </h1>
           <h2 className="md:text-[clamp(1.5rem,2vw,2rem)] italic md:mt-10">
