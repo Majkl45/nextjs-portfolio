@@ -21,7 +21,7 @@ const projects: Projects[] = [
     img: '/projects/inga-tvoje-investicni-hra.jpg',
     title: 'INGA - Investment Game',
     type: "App",
-    web: 'http://localhost:3000/#projects',
+    web: 'https://michael-rohm.netlify.app/#projects',
     description: '',
     progress: 'In development',
     tags: [
@@ -59,7 +59,7 @@ const projects: Projects[] = [
     img: '/projects/portfolio.jpg',
     title: 'Portfolio',
     type: "Website",
-    web: 'http://localhost:3000/',
+    web: 'https://michael-rohm.netlify.app/',
     description: '',
     tags: [
       {id: 1, name: "Next JS", icon: '/skills/frontend/next-js.svg' },
