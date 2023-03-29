@@ -9,13 +9,13 @@ const HomeHero = () => {
       <div className="flex flex-col md:flex-row justify-center items-center gap-20 mt-16">
         <div className="bg-background-secondary rounded-xl px-5 py-5 md:p-10">
           <h1 className="text-3xl md:text-[clamp(2.5rem,4vw,4rem)] font-extrabold leading-[3rem]">
-            Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-blue">Michael</span>
+            {`Hi, I'm`} <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-blue">Michael</span>
             <div className="inline-block animate-[shaking-hand_2.5s_ease-in-out_infinite]">
               <span>&#9995;</span>
             </div>
           </h1>
           <h2 className="md:text-[clamp(1.5rem,2vw,2rem)] italic md:mt-10">
-            I&apos;m a Junior Front-end Developer
+          {`I'm`} a Junior Front-end Developer
           </h2>
           <div className="mt-5 flex items-center justify-center gap-5 md:text-5xl">
             <Link href={'https://www.linkedin.com/in/michael-rohm-b86509259/'} legacyBehavior>
